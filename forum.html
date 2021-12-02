@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Final Fantasy 7 Fanclub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <!-- <section class="header"> -->
+            <nav>
+                <a href="index.html"><img src="./images/Final_Fantasy_VII_Remake_logo fanclub.png" alt="ff7fanclub"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="story.html">Story</a></li>
+                        <li><a href="characters.html">Characters</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-box4">
+                <h1>Areth & Tifa Welcome You</h1>
+            </div>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn1"></div>
+                    <button type="button" class="toggle-btn" onclick="login()"> Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <form id="login" class="input-group" method="post">
+                    <input type="text" class="input-field" placeholder="User Id" 
+                    required>
+                    <input type="text" class="input-field" placeholder="Enter Password" 
+                    required>
+                    <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+                <form id ="register" class="input-group" method="post">
+                    <input type="text" class="input-field" placeholder="User Id" 
+                    required>
+                    <input type="email" class="input-field" placeholder="Email Id" 
+                    required>
+                    <input type="text" class="input-field" placeholder="Enter Password" 
+                    required>
+                    <input type="checkbox" class="chech-box"><span>I agree to the terms & Conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+            <script>
+                var x = document.getElementById("login")
+                var y = document.getElementById("register")
+                var z = document.getElementById("btn1")
+    
+                function register(){
+                    x.style.left ="-400px"
+                    y.style.left ="50px"
+                    z.style.left ="110px"
+                }
+    
+                function login(){
+                    x.style.left ="50px"
+                    y.style.left ="450px"
+                    z.style.left ="0"
+                }
+            </script>
+        </div>
+        <!-- </section> -->
+        
+
+</body>
+</html>
